@@ -1,0 +1,22 @@
+.tabla {
+  width: 80%;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.agruparFiltros {
+  display: inline-flex;
+  width: auto;
+  border-style: groove;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.calendarios {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.titulo {
+  background-color: grey /*  */;
+}

@@ -1,0 +1,29 @@
+<div style="text-align:center">
+  <div>
+    <h1 class="titulo">
+      Medicion De Sensores
+    </h1>
+  </div>
+
+  <div class="tabla">
+    <p-table [value]="mediciones">
+      <ng-template pTemplate="header">
+        <tr>
+          <th>Id de la Medicion</th>
+          <th>id del Sensor</th>
+          <th>Ubicacion Sensor</th>
+          <th>Fecha de la Medicion</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-medicion>
+        <tr>
+          <td>{{ medicion.idMedicion }}</td>
+          <td>{{ medicion.idSensor }}</td>
+          <td>{{ medicion.ZonaInstalacionSensor }}</td>
+          <td>{{ medicion.fechaSenso }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  
+</div>
