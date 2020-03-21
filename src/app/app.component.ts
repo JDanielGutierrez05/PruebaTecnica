@@ -8,14 +8,22 @@ import { Medicion } from './models/Medicion';
   styleUrls: ['./app.component.css',]
 })
 export class AppComponent implements OnInit {
-  mediciones: Medicion[] = [];
   idSensorSeleccionado: number;
+  mediciones: Medicion[] = [];
   fechaInicial: Date;
   fechaFinal: Date;
+  columnas = [];
 
   constructor(private servicio: ServiceService) { }
 
   ngOnInit() {
+    this.columnas = [
+      { header: 'Id de la Medicion' },
+      { header: 'id del Sensor' },
+      { header: 'Ubicacion Sensor' },
+      { header: 'Fecha de la Medicion' }
+    ];
+
     this.getMediciones();
   }
 
